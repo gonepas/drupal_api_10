@@ -32,6 +32,7 @@
 /sites/example.sites.php
 /sites/example.settings.local.php
 /sites/development.services.yml
+/.idea
 /.csslintrc
 /.editorconfig
 /.eslintignore
