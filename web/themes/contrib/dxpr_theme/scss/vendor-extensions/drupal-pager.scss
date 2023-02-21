@@ -1,0 +1,123 @@
+//
+// Author: Jurriaan Roelofs for DXPR. Copyright DXPR.
+//
+
+// Pager
+@import "../includes/variables";
+
+.pager-nav {
+  display: flex;
+  justify-content: center;
+}
+
+.pagination {
+  border-radius: 0;
+  .pager__item, li {
+    > a,
+    > span {
+      color: $gray-light;
+      background-color: transparent;
+      border-color: $silver;
+      opacity: 0.6;
+      padding: 1em 1.4em;
+      &:hover,
+      &:focus {
+        color: $gray-light;
+        background-color: transparent;
+        border-color: $silver;
+        opacity: 1;
+      }
+    }
+    &:first-child {
+      > a,
+      > span {
+        border-radius: 0;
+      }
+    }
+    &:last-child {
+      > a,
+      > span {
+        border-radius: 0;
+      }
+    }
+    &.active > a,
+    &.active > span {
+      &,
+      &:hover,
+      &:focus {
+        color: $gray-light;
+        background-color: transparent;
+        border-color:  $silver;
+        opacity: 1;
+      }
+    }
+    &.disabled {
+      > span,
+      > span:hover,
+      > span:focus,
+      > a,
+      > a:hover,
+      > a:focus {
+        color:  $gray-lighter;
+        background-color: $gray-light;
+        border-color: transparent;
+      }
+    }
+  }
+
+  .page-item {
+    .page-link {
+      border-radius: 0;
+    }
+
+    &.active {
+      .page-link  {
+        color: $gray-light;
+        background-color: transparent;
+        border-color: $silver;
+        opacity: 1;
+      }
+    }
+  }
+
+  &.pagination-sm {
+    .page-item {
+      .page-link  {
+        padding: 1em 1.4em;
+        font-size: 12px;
+      }
+
+      &.active {
+        .page-link  {
+          color: $gray-light;
+          background-color: transparent;
+          border-color: $silver;
+          opacity: 1;
+        }
+      }
+    }
+  }
+
+}
+
+// Mini Pager
+
+.pager {
+  li > a,
+  li > span {
+    display: inline-block;
+    background: white;
+    border: 1px solid $gray-lighter;
+    border-radius: 15px;
+    padding: 5px 14px;
+    font-style: normal;
+    &:hover,
+    &:focus {
+      background: transparent;
+      text-decoration: none;
+    }
+    &:active {
+      ouline: none;
+    }
+  }
+}

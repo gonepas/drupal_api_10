@@ -1,0 +1,13 @@
+_core:
+  default_config_hash: J_pW_t3Kr8hKGmouyvHK7hwllxgm5E7Ur85BMZJjfao
+langcode: en
+recent_items: 10
+recent_items_link: default
+hide_non_content_items: 1
+show_account_link: ''
+enhance_content_item: 1
+show_categories_item: 1
+show_media_item: 1
+show_webforms_item: 1
+show_menus_item: 1
+group_collections: ''
